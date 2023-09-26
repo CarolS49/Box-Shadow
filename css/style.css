@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.img{
+    display: block;/*elemento bloque*/
+    width: 400px;
+    margin: 30px auto; /*Se centra con el margin auto porque cumple las condiciones de ser bloque y de tener el width definido*/
+    box-shadow: 4px 4px 12px rgba(20, 19, 19, 0.708); /*Agregando la transparencia al color r(red), g(green), b(blue), a(alpha= una transparencia al color, esta va del 0 al 1) */
+    /*En este caso que hay 4 valores se ha desplazado la sombra 4px a la derecha, 4 px para abajo, se le dio un blur de 12px y se le asigno el color a la sombra (se omite el spread)*/
+
+}
+
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: steelblue;
+    margin: 30px;
+    /* box-shadow: (esta propiedad cuenta con todos estos valores):
+        h-offset (desplaza la sombra horizontalmente a la derecha si es positivo y a la izquierda si es negativo)
+
+        v-offset (desplaza la sombra verticalmente hacia abajo si es positivo y arriba si es negativo)
+
+        blur (difumina los elementos)
+
+        spread (hace crecer la sombra o propagación de la sombra) 
+
+        color (va a determinar el color de la sombra, por defecto su valor es currentColor(color de los textos), se pueden agregar mas colores a la sombra; */
+    box-shadow: 100px 100px 10px 0 currentColor;
+}
